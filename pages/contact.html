@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="md:bg-[#f9fafb] md:flex md:flex-col md:gap-6">
+    <header class="header">
+      <div class="header__links">
+        <a href="" class="header__links__menu">
+          <img
+            src="../assets/images/menu.png"
+            alt="menu"
+            class="header__links_menu_image"
+          />
+        </a>
+        <a href="" class="header__links__queralist">کوئرا لیست</a>
+        <a href="../index.html" class="header__links__main">صفحه اصلی</a>
+        <a href="./about.html" class="header__links__about">درباره من</a>
+        <a href="#" class="header__links__contact">ارتباط با ما</a>
+      </div>
+      <div class="header__buttons">
+        <button class="">ورود به اپلیکیشن</button>
+        <a href=""
+          ><img
+            src="../assets/images/light-dark.png"
+            alt="toggle darkmode"
+            class=""
+        /></a>
+      </div>
+    </header>
+
+    <!-- contact section -->
+    <article
+      class="contact px-4 bg-[#f9fafb] flex flex-col gap-6 justify-between md:grid md:grid-cols-2 md:grid-rows-2 md:bg-white md:mx-[160px] md:my-[116px] border border-[#F5F6F8] rounded-lg"
+    >
+      <section
+        class="contact__title text-center flex flex-col items-center justify-evenly gap-4 md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-2 md:items-start md:text-right md:gap-4 md:justify-between md:h-20 md:my-8"
+      >
+        <h1 class="">تماس با من</h1>
+        <p class="">
+          چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+        </p>
+      </section>
+      <form
+        class="contact__form bg-white border border-[#F5F6F8] rounded-2xl px-6 py-5 flex flex-col items-start justify-between gap-4 md:row-start-1 md:row-end-3 md:border-none"
+      >
+        <div class="flex">
+          <div>
+            <label
+              for="first-name"
+              class="text-[#070D31] font-bold block mb-1 text-xs"
+              >نام:</label
+            >
+            <input
+              type="text"
+              id="first-name"
+              placeholder="نام شما"
+              class="p-[10px] border border-[#E6E6E6] rounded-md text-right text-xs text-[#BBBBBB] w-11/12"
+            />
+          </div>
+          <div>
+            <label
+              for="last-name"
+              class="text-[#070D31] font-bold block mb-1 text-xs"
+              >نام خانوادگی:</label
+            >
+            <input
+              type="text"
+              id="last-name"
+              placeholder="نام خانوادگی شما"
+              class="p-[10px] border border-[#E6E6E6] rounded-md text-right text-xs text-[#BBBBBB] w-11/12"
+            />
+          </div>
+        </div>
+        <div class="w-full">
+          <label
+            for="last-name"
+            class="text-[#070D31] font-bold block mb-1 text-xs"
+            >ایمیل:</label
+          >
+          <input
+            type="text"
+            id="last-name"
+            placeholder="ایمیل"
+            class="p-[10px] border border-[#E6E6E6] rounded-md text-right text-xs text-[#BBBBBB] w-full"
+          />
+        </div>
+        <div class="w-full">
+          <label
+            for="last-name"
+            class="text-[#070D31] font-bold block mb-1 text-xs"
+            >شماره تماس:</label
+          >
+          <input
+            type="text"
+            id="last-name"
+            placeholder="شماره تماس شما"
+            class="p-[10px] border border-[#E6E6E6] rounded-md text-right text-xs text-[#BBBBBB] w-full"
+          />
+        </div>
+        <div class="w-full">
+          <label
+            for="last-name"
+            class="text-[#070D31] font-bold block mb-1 text-xs"
+            >متن پیام شما:</label
+          >
+          <textarea
+            name=""
+            id=""
+            placeholder="شماره تماس شما"
+            class="p-[10px] border border-[#E6E6E6] rounded-md text-right text-xs text-[#BBBBBB] w-full h-32 resize-none"
+          ></textarea>
+        </div>
+        <button class="w-full bg-[#2C7EF8] rounded-lg h-10 text-white text-sm">
+          ارسال پیام
+        </button>
+      </form>
+      <address
+        class="contact__addresses grid grid-cols-2 grid-rows-2 gap-4 not-italic md:row-start-2 row-end-3 md:col-start-1 md:col-end-2 md:flex md:flex-col md:h-12"
+      >
+        <section
+          class="contact__form__mail bg-white row-start-1 row-end-2 col-start-1 col-end-2 flex items-center gap-4 border border-[#F5F6F8] rounded-2xl px-2 py-4 md:border-none"
+        >
+          <div class="address-icon">
+            <img src="../assets/images/mail.png" alt="mail-icon" />
+          </div>
+          <div class="contact__form__info">
+            <h4 class="md:hidden">ایمیل</h4>
+            <h5>QueraList@gmail.com</h5>
+          </div>
+        </section>
+        <section
+          class="contact__form__phone bg-white row-start-1 row-end-2 col-start-2 col-end-3 flex items-center gap-4 border border-[#F5F6F8] rounded-2xl px-2 py-4 md:border-none"
+        >
+          <div class="address-icon">
+            <img src="../assets/images/call.png" alt="phone-icon" />
+          </div>
+          <div class="contact__form__info flex flex-col">
+            <h4 class="md:hidden">تلفن</h4>
+            <h5>۰۹۱۲۱۲۳۴۵۶۷</h5>
+          </div>
+        </section>
+        <section
+          class="contact__form__icons bg-white row-start-2 row-end-3 col-start-1 col-end-3 flex items-center justify-center gap-4 border border-[#F5F6F8] rounded-2xl md:border-none"
+        >
+          <div class="address-icon">
+            <img
+              src="../assets/images/mark-github.png"
+              alt="github-icon"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="address-icon">
+            <img src="../assets/images/twitter.png" alt="twitter-icon" />
+          </div>
+          <div class="address-icon">
+            <img src="../assets/images/linkedin.png" alt="linkedin-icon" />
+          </div>
+        </section>
+      </address>
+    </article>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <section class="footer__header">
+        <img src="../assets/images/vector-black.png" alt="" />
+        <h4>کوئرا لیست</h4>
+        <img src="../assets/images/vector-black.png" alt="" />
+      </section>
+      <section class="footer__content">
+        <section class="footer__content__contact">
+          <h5 class="footer__content__contact__title">با ما در ارتباط باش</h5>
+          <p class="footer__content__contact__description">
+            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
+          </p>
+          <div class="footer__content__contact__sendmail">
+            <input
+              type="mailto:yasinsanjari1@gmail.com"
+              value="ایمیل"
+              class="footer__content__contact__sendmail__input"
+            /><button class="footer__content__contact__sendmail__button">
+              ارسال
+            </button>
+          </div>
+        </section>
+        <address class="footer__content__addresses">
+          <div class="footer__content__addresses__location">
+            <div class="address-icon">
+              <img
+                src="../assets/images/location-blue.png"
+                alt="location-icon"
+              />
+            </div>
+            <div class="address-icon-dark">
+              <img src="../assets/images/location.png" alt="location-icon" />
+            </div>
+            <p>
+              آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن
+              بست شب بو
+            </p>
+          </div>
+          <div class="footer__content__addresses__phone">
+            <div class="address-icon">
+              <img src="../assets/images/call-blue.png" alt="phone-icon" />
+            </div>
+            <div class="address-icon-dark">
+              <img src="../assets/images/call-filled.png" alt="phone-icon" />
+            </div>
+            <p>تلفن پشتیبانی ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+          </div>
+          <div class="footer__content__addresses__fax">
+            <div class="address-icon">
+              <img src="../assets/images/fax-blue.png" alt="fax-icon" />
+            </div>
+            <div class="address-icon-dark">
+              <img src="../assets/images/fax.png" alt="fax-icon" />
+            </div>
+            <p>فکس ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+          </div>
+        </address>
+      </section>
+      <p class="footer__description">
+        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+      </p>
+    </footer>
+  </body>
+</html>
